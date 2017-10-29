@@ -23,8 +23,8 @@ def data():
         #passes json from pene database into js removes bloat
         del i["_id"]
         st1.append(i)
-    ast = ast.literal_eval(json.dumps(st1))
-    finalJSON = str(ast).replace("'", "\"")
+    bast = ast.literal_eval(json.dumps(st1))
+    finalJSON = str(bast).replace("'", "\"")
     return finalJSON
 #rtype {"name": "BT"}
 
