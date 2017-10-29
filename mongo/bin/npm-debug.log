@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongo',
+1 verbose cli   '--save' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 verbose config Skipping project config: /Users/Nehsus/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData mongo
+9 silly fetchOtherPackageData mongo
+10 silly cache add args [ 'mongo', null ]
+11 verbose cache add spec mongo
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'mongo',
+12 silly cache add   scope: null,
+12 silly cache add   escapedName: 'mongo',
+12 silly cache add   name: null,
+12 silly cache add   rawSpec: 'mongo',
+12 silly cache add   spec: '/Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo',
+12 silly cache add   type: 'local' }
+13 silly addLocalTarball shasum (computed) 57577ff2eed9765d569ed7230273eb9ee2a962e7
+14 verbose addTmpTarball /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo not in flight; adding
+15 verbose correctMkdir /Users/Nehsus/.npm correctMkdir not in flight; initializing
+16 verbose addTmpTarball validating metadata from /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo
+17 verbose tar unpack /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo
+18 verbose tar unpacking to /tmp/npm-1737-f4ceb65c/unpack-379f189d
+19 silly gentlyRm /tmp/npm-1737-f4ceb65c/unpack-379f189d is being purged
+20 verbose gentlyRm don't care about contents; nuking /tmp/npm-1737-f4ceb65c/unpack-379f189d
+21 silly gunzTarPerm modes [ '755', '644' ]
+22 error not a package /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo
+23 error addLocal Could not install /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin/mongo
+24 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json'
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData  error for mongo { Error: ENOENT: no such file or directory, open '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json'
+24 silly fetchPackageMetaData     at Error (native)
+24 silly fetchPackageMetaData   errno: -2,
+24 silly fetchPackageMetaData   code: 'ENOENT',
+24 silly fetchPackageMetaData   syscall: 'open',
+24 silly fetchPackageMetaData   path: '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json' }
+25 silly rollbackFailedOptional Starting
+26 silly rollbackFailedOptional Finishing
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: ENOENT: no such file or directory, open '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json'
+29 verbose stack     at Error (native)
+30 verbose cwd /Users/Nehsus/Downloads/mongodb-osx-x86_64-3.4.7/bin
+31 error Darwin 16.5.0
+32 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongo" "--save"
+33 error node v6.11.2
+34 error npm  v3.10.10
+35 error path /tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json
+36 error code ENOENT
+37 error errno -2
+38 error syscall open
+39 error enoent ENOENT: no such file or directory, open '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json'
+40 error enoent ENOENT: no such file or directory, open '/tmp/npm-1737-f4ceb65c/unpack-379f189d/package.json'
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ -2, true ]
