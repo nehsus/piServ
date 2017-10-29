@@ -21,11 +21,10 @@
                 </center>
 <script>
     $("button").click(function() {
-                      $.get("/data", function(data, state) {
-                            $("#data").html("\0");
-                            var obj= JSON.parse(data);
+                      $.get("/data", function(finalJSON, state) {
+                            var obj= JSON.parse(finalJSON);
                             for(i=0; i<obj.length; i++){
-                                finalHTML="<tr><td" +JSON.stringify(obj[i]["name"]) + "</td></tr>";
+                                finalHTML="<tr><td>" +JSON.stringify(obj[i]["name"]) + "</td></tr>";
                                 $("#data").append(finalHTML)
                             }
                             });
