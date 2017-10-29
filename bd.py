@@ -2,9 +2,10 @@ from flask import Flask, render_template, request
 from datetime import datetime
 from pymongo import MongoClient
 from flask import jsonify
-import json
+import json, ast
 
 app = Flask(__name__)
+client = MongoClient("localhost", 27017)
 
 @app.route("/")
 def index():
@@ -19,12 +20,16 @@ def data():
     st1=[]
     dat= client["pene2"].test.find()
     for i in dat:
-        return str(dat)
-
+        #passes json from pene database into js removes bloat
+        del i["_id"]
+        st1.append(i)
+    ast = ast.literal_eval(json.dumps(st1))
+    finalJSON = str(ast).replace("'", "\"")
+    return finalJSON
+#rtype {"name": "BT"}
 
 if __name__ == "__main__":
-    client = MongoClient('localhost', 27017)
-    print("\n\nConnected to localhost:27017\n")
+    print("\n\tConnected to Nehsuspace:27017\n\n")
     app.run()
 
 
