@@ -4,7 +4,7 @@ from pymongo import MongoClient
 import jsonify
 import json
 
-mseal = MongoClient("localhost, 27017")
+mseal = MongoClient("localhost", 27017)
 app = Flask(__name__)
 
 @app.route("/")
