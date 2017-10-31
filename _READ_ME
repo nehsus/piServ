@@ -1,0 +1,15 @@
+#Github:Nehsus-—2017
+
+pyWeb is a simple web server that binds to mongod:27017
+templates>place dynamic html
+static>static css,js etc.
+mongo> database “pene3” is the current db
+	utils:	
+		
+		./mongo:
+			db.things.insertOne({‘name’:’what’})
+			 db.things.find()
+			#retrieves collection items from things’’
+
+usage: ./bd.py
+>127.0.0.1:5000
